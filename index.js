@@ -46,3 +46,31 @@ const nestedMuppet = {
 // 7. Use destructuring to assign all variables using the keys as the variable names
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
+
+// 1. String: Five animal sounds
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ');
+
+// 2. String: Four animal names (excluding horse)
+const [bessie, , dolly, babe, little] = farmAnimals.split(' ');
+
+// 3. String: Three animal colors (excluding horse and chicken)
+const [blackAndWhite, black, pink] = ['cow', 'sheep', 'pig'];
+
+// 4. Array: Seven rainbow colors
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+
+// 5. Array: Six rainbow initials (skip indigo)
+const [r, o, y, g, b, , v] = colors;
+
+// 6. Array: Indigo specifically
+const [, , , , , indg] = colors;
+
+// 7. Object: Muppet properties
+const { muppetName, color, song, job, partner } = muppet;
+
+// 8. Object: Nested properties
+const { 
+  album: { theMuppetMovie: { song2, song4 } },
+  nestedJob,
+  nestedPartner
+} = nestedMuppet;
